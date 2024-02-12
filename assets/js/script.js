@@ -171,7 +171,11 @@ let dental = [
 ];
 
 //Agregar código para el desafio 2 aquí
-document.write ("Pacientes de consultas dentales ")
+//Pregunta 2
+radiologia.pop();
+radiologia.shift();
+
+document.write("Pacientes de consultas dentales pregunta 3")
 let pacdental = dental.forEach(function (paciente) {
     document.write(` <p>${paciente.hora} - ${paciente.especialista} - ${paciente.paciente} - ${paciente.rut} - ${paciente.prevision} </P>`); 
 });
@@ -189,8 +193,12 @@ let pacisapre = consultas.forEach(function (paciente) {
     }
 });
 
-
- 
+document.write("Pregunta 6");
+let pacfonasa = consultas.filter(function (paciente) { 
+    return paciente.prevision === "FONASA";
+}
+);    
+document.write(` ${pacfonasa.nombre} - ${pacfonasa.prevision} </P>`);
 
 //Agregar código para el desafio 2 aquí
 
