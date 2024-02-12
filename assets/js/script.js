@@ -171,12 +171,16 @@ let dental = [
 ];
 
 //Agregar código para el desafio 2 aquí
-
+document.write ("Pacientes de consultas dentales ")
 let pacdental = dental.forEach(function (paciente) {
     document.write(` <p>${paciente.hora} - ${paciente.especialista} - ${paciente.paciente} - ${paciente.rut} - ${paciente.prevision} </P>`); 
 });
    
-
+let consultas = radiologia.concat(traumatologia, dental);
+document.write ("Pacientes de consultas generales ${consultas.length} ")
+let pacconsulta= consultas.forEach(function (paciente) {
+    document.write(` <p>${paciente.paciente} </P>`);
+})
 
 
 
