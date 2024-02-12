@@ -177,11 +177,17 @@ let pacdental = dental.forEach(function (paciente) {
 });
    
 let consultas = radiologia.concat(traumatologia, dental);
-document.write ("Pacientes de consultas generales ${consultas.length} ")
+document.write("Pregunta 4");
 let pacconsulta= consultas.forEach(function (paciente) {
     document.write(` <p>${paciente.paciente} </P>`);
 })
 
+document.write("Pregunta 5");
+let pacisapre = consultas.forEach(function (paciente) {
+    if (paciente.prevision === "ISAPRE") {
+        document.write(` <p>${paciente.paciente} - ${paciente.prevision} </P>`);
+    }
+});
 
 
  
